@@ -100,7 +100,7 @@ async function getSongs(folder) {
     let aelements = div.getElementsByTagName("a");
     let songs = [];
     for (const ele of aelements) {
-        if (ele.href.endsWith(".mp3")) {
+        if (ele.href.endsWith(".mp3") && !ele.href.includes(".htaccess")) {
             // console.log(ele.href.split("songs/")[1].replaceAll("%20", " "));
             songs.push(ele.href.split(`songs/${folder}/`)[1].replaceAll("%20", " "));
         }
