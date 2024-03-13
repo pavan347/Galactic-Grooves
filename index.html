@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galactic Grooves</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="left" id="left">
+
+            <div class="home" id="home">
+                <div class="logo">
+                    <img src="img/logo-removebg-preview.png" alt="logo">Galactic Grooves
+                    <div class="close" id="close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <ul id="home-ul">
+                    <li id="playlists" data-target="playlistsContainer"><i class="fa-solid fa-house"></i>Home</li>
+                    <li id="search" data-target="searchContainer"><i class="fa-solid fa-magnifying-glass"></i>Search
+                    </li>
+                    <li id="about" data-target="aboutContainer"><i class="fa-solid fa-user"></i>About</li>
+                </ul>
+            </div>
+            <div class="library" id="library">
+                <div class="library-content">
+                    <div class="title">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <p> Library</p>
+                        <div id="go-up">
+                            <i class="fa-solid fa-caret-up"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="songslist">
+                    <ul>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div class="links">
+                        <a href="https://www.linkedin.com/in/garapati-pavan-kumar/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/pavan347"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/pavan_4268/?igsh=eG9tZno0ejl2cXo3"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <!-- <button class="btn"><i class="fa-solid fa-globe"></i>English</button> -->
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="header">
+                <div class="nav">
+                    <div class="menu">
+                        <div id="open" data-target="left">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <div class="title">
+                            Albums
+                        </div>
+                        <!-- <div class="previous"><i class="fa-solid fa-angle-left"></i></div>
+                        <div class="next"><i class="fa-solid fa-angle-right"></i></div> -->
+                    </div>
+                    <div class="search-box">
+                        <i class="fa-solid fa-search"></i>
+                        <input type="text" name="searchbox" id="searchbox" placeholder="What do you want to play?">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <!-- <div class="title">Popular artists <span><a href="#">show all</a></span></div> -->
+                <div class="card-container active" id="playlistsContainer">
+                </div>
+                <div class="search-container" id="searchContainer">
+                    Search by the name of the Album
+                </div>
+                <div class="about-container " id="aboutContainer">
+                    <div class="title">Galatic Grooves</div>
+                    <div class="desc">
+                        <p> Embark on a cosmic journey through sound with Glactic Grooves, the revolutionary music
+                            player application brought to you by Garapati Pavan Kumar. The name <strong>Glactic
+                                Grooves</strong>
+                            encapsulates the essence of our platform: a celestial fusion of melodies, rhythms, and beats
+                            that transcend boundaries and traverse galaxies.
+                        </p>
+                        <p>
+                            At Glactic Grooves, we believe that music knows no bounds. Our platform is a testament to
+                            this belief, offering a seamless blend of HTML, CSS, and JavaScript to create an immersive
+                            and user-friendly experience. With a sleek and intuitive interface, navigating through
+                            playlists and discovering new music has never been easier.
+                        </p>
+
+                        <p>
+                            But what truly sets Glactic Grooves apart is its adaptability and convenience. With a simple
+                            upload of a folder containing a cover.jpg file and songs, users can effortlessly expand the
+                            music library. The folder name becomes the playlist name, while an info.json file provides
+                            additional context with details like title and description. This unique feature ensures that
+                            the musical journey is as dynamic as it is enriching.
+                        </p>
+                        <p>
+
+                            Join us on a journey through the cosmos of music, where every note is a star and every
+                            rhythm is a constellation. Experience the magic of Glactic Grooves and let the music guide
+                            you on an unforgettable adventure.
+                        </p>
+                    </div>
+                    <div class="footer">
+                        <div class="title">
+                            Follow us on
+                        </div>
+                        <div class="links">
+                            <a href="https://www.linkedin.com/in/garapati-pavan-kumar/"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/pavan347"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/pavan_4268/?igsh=eG9tZno0ejl2cXo3"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="playbar">
+                <div class="abovebar">
+                    <div class="songinfo">
+                        <marquee behavior="scroll" direction="left"></marquee>
+                    </div>
+                    <div class="seekbar">
+                        <div class="circle">
+    
+                        </div>
+                    </div>
+                    
+                    <div class="timevol">
+                        <div class="songtime"></div>
+                        <div class="songbuttons">
+                            <img width="32" id="previous" src="img/prevsong.svg" alt="">
+                            <img width="38" id="play" src="img/play.svg" alt="">
+                            <img width="32" id="next" src="img/nextsong.svg" alt="">
+                        </div>
+                        <div class="songtime-duration">
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </main>
+    <script src="script/app.js"></script>
+</body>
+
+</html>
